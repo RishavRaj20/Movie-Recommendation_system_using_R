@@ -70,7 +70,7 @@ rating_values <- as.vector(ratingMatrix@data)
 unique(rating_values) # extracting unique ratings
 Table_of_Ratings <- table(rating_values) # creating a count of movie ratings
 Table_of_Ratings
-# Most viewed movies visualization
+# Most viewed movies visualization 
 library(ggplot2)
 movie_views <- colCounts(ratingMatrix) # count views for each movie
 table_views <- data.frame(movie = names(movie_views),
